@@ -54,3 +54,27 @@ Customer ingin menambahkan 2 item baru menggunakan method `add_item()`. Item yan
 Daftar pesanan setelah ditambahkan:
 
 ![image](https://github.com/agungbesti/cashier-app/assets/35904444/13cb7cba-1642-4444-bad9-5016060e9b07)
+
+### Test Case 2
+Ternyata Customer salah membeli salah satu item dari belanjaan yang sudah ditambahkan, maka Customer dapat menggunakan method `delete_item()` untuk menghapus item yang dipilih. Item yang ingin dihapus adalah Pasta gigi.
+
+![image](https://github.com/agungbesti/cashier-app/assets/35904444/9f0c4aca-acd1-42d5-9fb1-cbe906f2d329)
+
+Daftar pesanan setelah item dihapus:
+
+![image](https://github.com/agungbesti/cashier-app/assets/35904444/afb92681-2072-4621-8c10-36088f2a5a8b)
+
+### Test Case 3
+Ternyata setelah dipikir-pikir, Customer salah memasukkan item yang ingin dibelanjakan. Daripada menghapusnya satu-satu, maka Customer cukup menggunakan method `reset_transaction()` untuk menghapus semua item yang sudah ditambahkan.
+Daftar pesanan setelah diperbarui:
+
+![image](https://github.com/agungbesti/cashier-app/assets/35904444/bebba733-5401-482e-bd95-a137b7a7f51d)
+
+### Test Case 4
+setelah Customer selesai berbelanja, maka sistem akan menghitung total belanja yang harus dibayarkan menggunakan method `total_payment()`. Sebelum mengeluarkan output total akan menampilkan daftar belanja.
+Daftar pesanan ketika melakukan pembayaran:
+
+![image](https://github.com/agungbesti/cashier-app/assets/35904444/3ef4b930-6eb4-41d4-a6f0-4b589d924bf2)
+
+## Conclusion
+Project python yang diprogram kali ini merupakan sekumpulan kode yang dibuat untuk mengelola proses transaksi pembelian barang dalam sebuah supermarket. Dalam project ini menggunakan class Transaction dengan beberapa methods di dalamnya :`add_item()`, `update_item_name()`, `update_item_qty()`, `update_item_price()`, `delete_item()`, `reset_transaction()`, `check_order()`, dan `total_payment()`. Method-method tersebut digunakan untuk mengelola data transaksi yang masuk seperti menambah pesanan, mengubah data pesanan, meihat daftar pesanan, mereset daftar pesanan dan menghitung pembayaran total harga semua transaksi.
