@@ -1,7 +1,7 @@
 """
 Author: Agung Besti
 Date: 20/2/2023
-This is the kasircopy.py module.
+This is the kasir.py module.
 Usage:
 - Class Kasir
 """
@@ -51,10 +51,10 @@ class Kasir(Transaction):
         print('' * 5, '[Selamat Datang di Toko Abesti]', )
         tabel_menu = PrettyTable(["No Menu", "Jenis Pesanan"])
         tabel_menu.add_row(["1", "Tambah Pesanan"])
-        tabel_menu.add_row(["2", "Hapus Pesanan"])
-        tabel_menu.add_row(["3", "Update nama Pesanan"])
-        tabel_menu.add_row(["4", "Update Jumlah Pesanan"])
-        tabel_menu.add_row(["5", "Update Harga Pesanan"])
+        tabel_menu.add_row(["2", "Update nama Pesanan"])
+        tabel_menu.add_row(["3", "Update Jumlah Pesanan"])
+        tabel_menu.add_row(["4", "Update Harga Pesanan"])
+        tabel_menu.add_row(["5", "Hapus Pesanan"])
         tabel_menu.add_row(["6", "Periksa Pesanan"])
         tabel_menu.add_row(["7", "Reset Pesanan"])
         tabel_menu.add_row(["8", "Total harga Pesanan"])
@@ -88,10 +88,10 @@ class Kasir(Transaction):
         """
         dict_pilihan = {
             "1": self.trnsct_123.add_item,
-            "2": self.trnsct_123.remove_item,
-            "3": self.trnsct_123.update_item_name,
-            "4": self.trnsct_123.update_item_qty,
-            "5": self.trnsct_123.update_item_price,
+            "2": self.trnsct_123.update_item_name,
+            "3": self.trnsct_123.update_item_qty,
+            "4": self.trnsct_123.update_item_price,
+            "5": self.trnsct_123.remove_item,
             "6": self.trnsct_123.check_order,
             "7": self.trnsct_123.reset_transaction,
             "8": self.trnsct_123.total_price,
